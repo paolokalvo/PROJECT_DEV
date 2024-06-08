@@ -39,3 +39,8 @@ Descreva o propósito do seu projeto, os problemas que ele resolve e por que ele
 #### SUBTITIULO
 
 ###### para ver como fica
+
+* veja so 1
+* veja so 2
+* veja so 3
+  

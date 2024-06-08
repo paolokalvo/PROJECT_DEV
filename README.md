@@ -30,7 +30,7 @@ Descreva o propósito do seu projeto, os problemas que ele resolve e por que ele
 
 ## Mudou o que de 1 
 
-####Para 2
+#### Para 2
 1. muda sim 
 
-##Voce sabia que um novo commit ira acontecer ?
+## Voce sabia que um novo commit ira acontecer ?

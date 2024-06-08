@@ -1,3 +1,5 @@
+# Aqui vcs estão todos juntos 
+
 # Meu projeto 1
 
 Uma breve descrição sobre o que o projeto faz e para quem ele é.
@@ -44,3 +46,8 @@ Descreva o propósito do seu projeto, os problemas que ele resolve e por que ele
 * veja so 2
 * veja so 3
   
+
+# MEU SEGUNDO DIA TREINAMENTO 
+1, VC SABE QUE 
+2. SALBE QUE SIM 
+3. SABE QUE NÃO 

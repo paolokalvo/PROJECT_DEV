@@ -1,1 +1,105 @@
+# AULA DE ALGORITIMOS -  
+
+UMA SEQUENCIA DE PASSOS QUE O PROGRAMA UTLIZA PARA PODER REALIZAR TAREFAS 
+COMANDOS EXPLICITOS E BEM DEFINIDOS
+
+# CONSTRUÇÃO DE ALGORITIMOS 
+
+INICIO - ENTRADA - PROCESSAMENTO - SAIDA = FINAL 
+
+BOM DIA + ENTRADA = NOME DA PESSOA
+
+INICIO - PEDIR O NOME DA PESSOA
+
+ARMAZENAR O NOME DA PESSOA
+
+
+INICIO - PRINCIPAL 
+  MOSTAR "DIGITE SEU NOME :"
+  ESPERAR_DIGITACAO -> NOME
+  JUNTAR_TEXTO 'BOM DIA ', NOME -> SAUDAÇÃO
+  MOSTRAR_TEXTO'SAUDAÇÃO'
+FIM 
+
+
+TIPO DE DADOS 
+* 1 NUMÉRICO 
+* 2 FLUTUANTES
+* 3 TEXTO 
+* 4 BOLEANO
+
+
+# ALGORITIMO SIMPLES DE SOMA
+
+
+INICIO principal
+  VAR n1 : INTEIRO
+  VAR n2 : INTEIRO
+
+  DEFINIR 0 -> n1
+  DEFINIR 0 -> n2
+  VAR resultado: inteiro 
+  MOSTAR "Digite o primeiro numero:"
+  ESPERAR_DIGITAÇÃO -> n1
+  MOSTAR "Digite o segundo  numero:"
+  ESPERAR_DIGITAÇÃO -> n2
+  SOMAR n1, n2 -> resultado 
+  MOSTRAR resultado
+FIM
+
+
+# ESTRUTURAS DE DECISAÇÃO: 
+
+
+## ALGORITIMO 
+
+ALGORITMO Saudacao
+VARIÁVEIS
+    nome: CARACTER
+    hora: INTEIRO
+
+INÍCIO
+    ESCREVA "Qual é o seu nome?"
+    LEIA nome
+
+    // Obtém a hora atual do sistema
+    hora <- OBTEM_HORA_ATUAL()
+
+    // Determina a saudação com base na hora do dia
+    SE hora < 12 ENTAO
+        ESCREVA "Bom dia, " + nome + "!"
+    SENÃO SE hora < 18 ENTAO
+        ESCREVA "Boa tarde, " + nome + "!"
+    SENÃO
+        ESCREVA "Boa noite, " + nome + "!"
+    FIM SE
+FIM
+
+
+#!/bin/bash
+
+# Pergunta o nome da pessoa
+echo "Qual é o seu nome?"
+read nome
+
+# Obtém a hora atual
+hora=$(date +%H)
+
+# Determina a saudação com base na hora do dia
+if [ $hora -lt 12 ]; then
+    saudacao="Bom dia"
+elif [ $hora -lt 18 ]; then
+    saudacao="Boa tarde"
+else
+    saudacao="Boa noite"
+fi
+
+# Exibe a saudação com o nome da pessoa
+echo "$saudacao, $nome!"
+
+
+
+
+
+
 

@@ -1,5 +1,5 @@
 # Meu projeto 1
-#novo
+
 Uma breve descrição sobre o que o projeto faz e para quem ele é.
 
 ## Índice

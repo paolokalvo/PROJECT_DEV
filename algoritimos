@@ -99,7 +99,93 @@ echo "$saudacao, $nome!"
 
 
 
+#######LOGICA DE REPETIÇÃO
+
+
+ALGORITMO SomaAteCem
+VARIÁVEIS
+    soma: INTEIRO
+    numero: INTEIRO
+
+INÍCIO
+    // Inicializa a soma
+    soma <- 0
+
+    // Loop até a soma ser maior ou igual a 100
+    ENQUANTO soma < 100 FAÇA
+        ESCREVA "Digite um número:"
+        LEIA numero
+        
+        // Verifica se o valor digitado é um número válido
+        SE NAO_E_NUMERO(numero) ENTAO
+            ESCREVA "Por favor, digite um número válido."
+            CONTINUE
+        FIM SE
+
+        // Adiciona o número à soma
+        soma <- soma + numero
+    FIM ENQUANTO
+
+    // Mostra a soma total
+    ESCREVA "A soma total é: ", soma
+FIM
 
 
 
+#!/bin/bash
 
+# Inicializa a soma
+soma=0
+
+# Loop até a soma ser maior ou igual a 100
+while [ $soma -lt 100 ]; do
+    # Pede ao usuário para digitar um número
+    echo "Digite um número:"
+    read numero
+    
+    # Verifica se o valor digitado é um número
+    if ! [[ "$numero" =~ ^[0-9]+$ ]]; then
+        echo "Por favor, digite um número válido."
+        continue
+    fi
+
+    # Adiciona o número à soma
+    soma=$((soma + numero))
+done
+
+# Mostra a soma total
+echo "A soma total é: $soma"
+
+### USANDO  O FOR 
+
+#!/bin/bash
+
+# Inicializa a soma
+soma=0
+
+# Loop usando 'for' com uma condição de saída interna
+for (( ; ; ))
+do
+    # Pede ao usuário para digitar um número
+    echo "Digite um número:"
+    read numero
+    
+    # Verifica se o valor digitado é um número válido
+    if ! [[ "$numero" =~ ^[0-9]+$ ]]; then
+        echo "Por favor, digite um número válido."
+        continue
+    fi
+
+    # Adiciona o número à soma
+    soma=$((soma + numero))
+    
+    # Verifica se a soma é maior ou igual a 100
+    if [ $soma -ge 100 ]; then
+        break
+    fi
+done
+
+# Mostra a soma total
+echo "A soma total é: $soma"
+
+####

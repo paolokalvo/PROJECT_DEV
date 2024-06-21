@@ -94,3 +94,45 @@ Agora o texto está formatado corretamente em Markdown, com todos os detalhes, c
 <details>
   <summary><strong>Códigos SQL</strong></summary>
 tome isso
+
+
+<details>
+  <summary><strong>Códigos SQL</strong></summary>
+sql
+Copiar código
+-- Criação da tabela cruzeiro_passageiro
+CREATE TABLE cruzeiro_passageiro (
+  cruzeiro_codigo int(11) NOT NULL,
+  passageiro_codigo int(11) NOT NULL,
+  KEY FK7ACB9DA2547B48BD (passageiro_codigo),
+  KEY FK7ACB9DA2E971C35D (cruzeiro_codigo)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Inserção de dados na tabela cruzeiro_passageiro
+INSERT INTO cruzeiro_passageiro (cruzeiro_codigo, passageiro_codigo) VALUES 
+(1, 1),
+(1, 2),
+(2, 2),
+(2, 3);
+
+-- Criação da tabela passageiro
+CREATE TABLE passageiro (
+  codigo int(11) NOT NULL auto_increment,
+  cpf varchar(255) NOT NULL,
+  dataNascimento date NOT NULL,
+  nome varchar(255) NOT NULL,
+  sexo varchar(255) NOT NULL,
+  PRIMARY KEY (codigo)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4;
+
+-- Inserção de dados na tabela passageiro
+INSERT INTO passageiro (codigo, cpf, dataNascimento, nome, sexo) VALUES 
+(1, '111111111', '1986-01-22', 'Rafael', 'Masculino'),
+(2, '111111111', '2014-09-08', 'Henrique', 'Feminino'),
+(3, '11111111', '2014-09-22', 'Nathalia', 'Feminino');
+
+-- Adicionando restrições de chave estrangeira na tabela cruzeiro_passageiro
+ALTER TABLE cruzeiro_passageiro
+  ADD CONSTRAINT FK7ACB9DA2547B48BD FOREIGN KEY (passageiro_codigo) REFERENCES passageiro (codigo),
+  ADD CONSTRAINT FK7ACB9DA2E971C35D FOREIGN KEY (cruzeiro_codigo) REFERENCES cruzeiro (codigo);
+</details>

@@ -98,8 +98,8 @@ tome isso
 
 <details>
   <summary><strong>Códigos SQL</strong></summary>
-sql
-Copiar código
+```sql
+
 -- Criação da tabela cruzeiro_passageiro
 CREATE TABLE cruzeiro_passageiro (
   cruzeiro_codigo int(11) NOT NULL,

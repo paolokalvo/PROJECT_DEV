@@ -91,5 +91,6 @@ Para sugestões ou dúvidas, entre em contato através do email [paolo.exemplo.c
 Agora o texto está formatado corretamente em Markdown, com todos os detalhes, códigos SQL e seções devidamente estruturados. Basta copiar e colar no Nano. Certifique-se de substituir `[inserir licença]` e `[seu-email@exemplo.com]` com suas informações reais antes de salvar o arquivo.
 
 ```
-
+<details>
+  <summary><strong>Códigos SQL</strong></summary>
 tome isso

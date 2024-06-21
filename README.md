@@ -85,7 +85,7 @@ ALTER TABLE cruzeiro_passageiro
 Este projeto é licenciado sob [inserir licença]. Consulte o arquivo LICENSE para obter mais detalhes.
 
 ## Contato
-Para sugestões ou dúvidas, entre em contato através do email [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+Para sugestões ou dúvidas, entre em contato através do email [seu-email@exemplo.com](mailto:paolo@exemplo.com).
 ```
 
 Agora o texto está formatado corretamente em Markdown, com todos os detalhes, códigos SQL e seções devidamente estruturados. Basta copiar e colar no Nano. Certifique-se de substituir `[inserir licença]` e `[seu-email@exemplo.com]` com suas informações reais antes de salvar o arquivo.

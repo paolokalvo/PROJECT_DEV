@@ -137,5 +137,5 @@ INSERT INTO passageiro (codigo, cpf, dataNascimento, nome, sexo) VALUES
 ALTER TABLE cruzeiro_passageiro
   ADD CONSTRAINT FK7ACB9DA2547B48BD FOREIGN KEY (passageiro_codigo) REFERENCES passageiro (codigo),
   ADD CONSTRAINT FK7ACB9DA2E971C35D FOREIGN KEY (cruzeiro_codigo) REFERENCES cruzeiro (codigo);
-
+```
 </details>
